@@ -21,5 +21,14 @@ def base_func(lista):
     finally:
         print("Inserção finalizada.\n")
 
+def consultar_func(lista):
+    codigo = input("Digite o codigo do funcionario: ")
+    for funcionario in lista:
+        if funcionario["codigo"] == codigo:
+            print(f"Funcionario encontrado: {funcionario}")
+            return
+        else:
+            print("produto não encontrado. ")
+
 
 
